@@ -17,7 +17,7 @@ export function WalletConnect() {
 
   return (
     <div style={{ display: 'flex', gap: 12, alignItems: 'center' }}>
-      {connectors.map((c) => (
+      {connectors.map((c: any) => (
         <button key={c.uid} onClick={() => connect({ connector: c })} disabled={!c.ready}>
           Connect {c.name}
         </button>
